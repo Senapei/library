@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 50px;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template: 80px 1fr 80px / 1fr;
+}
+
+.main {
+  display: grid;
+  grid-template: 115px 1fr / 1fr;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: rgba(245, 13, 13, 0.64);
+
+  border-radius: 16px;
+}
+
+.form-container-hide {
+  display: none;
+}
+
+.book-display {
+  display: grid;
+  grid-template: 60px 1fr / 1fr;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+}
+
+.card {
+  height: 370px;
+  max-width: 300px;
+  background-color: rgb(100, 149, 237);
+  margin: 20px 20px;
+  padding: 10px;
+  box-shadow: -4px 5px 10px grey;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-img {
+  margin-top: 10px;
+  width: 85%;
+  height: auto;
+}
+
+footer {
+  background-color: rgb(80, 74, 74);
+  color: #fff;
+  text-align: center;
+}
